@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jolly+Lodger&family=Joti+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal_left">
+             <div class="modal_left_logo">
+                 <a href="#" class="logo_link"><img src="./images/Vector.png" alt=""></a>
+                 <span class="modal_left_logo_text">arly</span>
+             </div>
+             <div class="modal_left_header_container">
+                  <h2 class="modal_left_header">
+                      Join us!
+                  </h2>
+             </div>
+         </div>
+        <div class="modal_right">
+            <h1 class="modal_right_registration">
+                Register here
+            </h1>
+            <p class="modal_right_instructions">
+                Follow the instructions to make it easier to register and you will be 
+able to explore inside.
+            </p>
+            
+            <form class="name_form">
+                <!----------------ІМ'Я------------------>
+                <div class="flex_name">
+                   <div class="name">
+                        <h4 class="name_header">First Name</h4>
+                       <input class="first_name" type="text">
+                    </div>
+                     <div class="name">
+                        <h4 class="name_header">Last Name</h4>
+                       <input class="last_name" type="text">
+                    </div>
+                </div>  
+                <!----------------email------------------>
+                <div class="email_container">
+                    <h4 class="email_header">Email</h4>
+                    <input class="email_input" type="email"> 
+                </div> 
+                <!----------------АДРЕСА------------------>
+                <div class="address_container">
+                    <h4 class="address_header">Address</h4>
+                    <input class="address_input" type="text"> 
+                </div> 
+                <!----------------КОНТАКТИ------------------>
+                 <div class="contacts_container">
+                    <h4 class="contacts_header">Contacts</h4>
+                    <input class="contacts_input" type="tel"> 
+                </div> 
+            </form>
+            <!----------------РЕЄСТРАЦІЯ------------------>
+            <button class="registration_button"><a href="#">Register</a></button>
+            <strong class="account_text">Already have an account?</strong> 
+            <a href="#" class="login_link">Login</a>
+            <!------------------СОЦІАЛЬНІ МЕРЕЖІ------------------>
+            <div class="registration_with_social">
+             <button class="social_button fb_btn">
+                <svg class="fb_icon" width="25" height="46" viewBox="0 0 25 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.7099 25.3334L23.9922 17.186H16.0931V11.8902C16.0931 9.66234 17.1959 7.48545 20.7223 7.48545H24.3641V0.547405C22.2433 0.209212 20.1003 0.026251 17.9525 0C11.4511 0 7.20665 3.90822 7.20665 10.9736V17.186H0V25.3334H7.20665V45.04H16.0931V25.3334H22.7099Z" fill="white"/>
+</svg>
+
+                <a href="https://www.facebook.com/">Login with Facebook</a>
+            </button>
+              <button class="social_button gmail_btn">
+                <svg class="gmail_icon" width="54" height="40" viewBox="0 -2 54 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="overflow:visible;display:block">
+<path d="M3.63545 40H12.1182V19.3991L0 10.3105V36.3645C0 38.3762 1.62989 40 3.63545 40Z" fill="#4285F4"/>
+<path d="M41.2018 40H49.6845C51.6961 40 53.3199 38.3701 53.3199 36.3645V10.3105L41.2018 19.3991" fill="#34A853"/>
+<path d="M41.2018 3.64576V19.3994L53.3199 10.3108V5.46349C53.3199 0.967648 48.1879 -1.59534 44.5949 1.10095" fill="#FBBC04"/>
+<path d="M12.1182 19.3991V3.64551L26.66 14.5519L41.2018 3.64551V19.3991L26.66 30.3055" fill="#EA4335"/>
+<path d="M0 5.46349V10.3108L12.1182 19.3994V3.64576L8.72508 1.10095C5.12598 -1.59534 0 0.967648 0 5.46349Z" fill="#C5221F"/>
+</svg>
+                <a href="https://accounts.google.com/">Login with Gmail</a>
+            </button>
+        </div>
+      </div>  
+    </div>
+</body>
+</html>
