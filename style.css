@@ -1,0 +1,303 @@
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inter;
+    background-color: #ececeb79;
+ }
+
+ .modal{
+   
+    display: flex;
+    width: 1080px;
+    height: 1080px;
+    border-radius: 40px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: rgba(1, 173, 185, 1);
+    justify-content: flex-end;
+ }
+ /*---------------------------------------ЛІВА ЧАСТИНА МОДАЛЬНОГО ВІКНА---------------------------------------*/
+ .modal_left {
+   box-sizing: border-box;
+    background-color: rgba(1, 173, 185, 1);
+    background-image: url('../images/bg-abstract.png');
+    background-size:410px 680px;
+    background-position: 0 349px;
+    background-repeat: no-repeat;
+    width: 40%;
+       .modal_left_header{
+           font-family: 'jolly lodger';
+           font-size: 48px;
+           letter-spacing: 27px;
+           text-align: center;
+           margin-top: 108px;
+       }
+       .modal_left_logo{
+        display: flex;
+        margin-top: 50px;
+        margin-left: 47px;
+        align-items: center;
+       }
+       .modal_left_logo_text{
+        font-family: 'joti one';
+        font-size: 40px;
+        line-height: 100%;
+        color: #fff;
+        
+       }     
+  }
+   /*---------------------------------------ПРАВА ЧАСТИНА МОДАЛЬНОГО ВІКНА---------------------------------------*/
+  .modal_right{
+   background-image: url('../images/Ellipse\ 4\ згори.svg'),url('../images/Ellipse\ 5\ знизу.svg');
+   background-repeat: no-repeat;
+   background-position: top right, bottom right;
+    background-color: #fff;
+    width: 60%;
+    
+    border-radius: 40px;
+    .modal_right_registration{
+        font-size: 48px;
+        font-weight: 600;
+        color: rgba(1, 173, 185, 1);
+        text-align: center;
+        margin-top: 82px;
+        margin-bottom: 12px;
+    }
+    .modal_right_instructions{
+        max-width: 563px;
+        font-family: 'open sans';
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(3, 1, 76, 1);
+        text-align: center;
+       margin: 0 auto;
+       padding: 0;
+     }     
+  }
+  /*---------------------------------------ФОРМА РЕЄСТРАЦІЇ---------------------------------------*/
+  .flex_name{
+      display: flex;
+      gap: 32px;
+  }
+  .name{
+    margin-top: 56px;
+    position: relative;
+    display: flex;
+     width: 275px;
+   height: 60px;
+   border: 1px solid rgba(0, 0, 0, 1);
+   border-radius: 8px;
+  }
+  .name:has(input:focus) h4{
+   text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+   color: black;
+   transition: 300ms;
+  }
+  .name:nth-child(1){
+      margin-left: 39px; 
+  }
+  .first_name:focus, .last_name:focus{
+  background: none;
+  } 
+
+   .name_header,.email_header,.address_header, .contacts_header{   /*ЗАГОЛОВКИ ПОЛІВ ФОРМИ РЕЄСТРАЦІЇ*/
+   position: absolute;
+   top: -32px;
+   left: 17px;
+   color:rgba(145, 144, 176, 1);
+   background-color: #fff;
+   font-size: 16px;
+   font-family: inter;
+   font-weight: 600;
+   }
+   
+  .first_name, .last_name{
+   box-sizing: border-box;
+   background: url("../images/Vector.svg")  no-repeat;
+   background-position: 17px 20px;
+   display: flex;
+   vertical-align: middle;
+   border: #fff;
+   width: 275px;
+   height: 60px;
+   }
+   /*---------------------------------------EMAIL, ADDRESS---------------------------------------*/
+    .email_container, .address_container{
+    margin-top: 36px;
+    margin-left: 39px;
+    position: relative;
+    display: flex;
+     max-width: 582px;
+   height: 60px;
+   border: 1px solid rgba(0, 0, 0, 1);
+   border-radius: 8px;
+  }
+  .email_container:has(input:focus) h4{
+   text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+   color: black;
+   transition: 300ms;
+  }
+  .email_input:focus{
+   background: none;
+  }
+  .email_input{
+   background: url("../images/email.svg")  no-repeat;
+   background-position: 17px 20px;
+   display: flex;
+   vertical-align: middle;
+   border: #fff;
+   width: 582px;
+   height: 60px;
+   padding: 0
+  }
+  .address_input{
+   background: url("../images/address.svg")  no-repeat;
+   background-position: 17px 20px;
+   display: flex;
+   vertical-align: middle;
+   border: #fff;
+   width: 582px;
+   height: 60px;
+   padding: 0
+  }
+  .address_input:focus{
+   background: none;
+  }
+ .address_container:has(input:focus) h4{
+   text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+   color: black;
+   transition: 300ms;
+  }
+ /*---------------------------------------КОНТАКТИ---------------------------------------*/
+ 
+   .contacts_container{
+      margin-top: 41px;
+    margin-left: 39px;
+    position: relative;
+    display: flex;
+     max-width: 582px;
+   height: 60px;
+   border: 1px solid rgba(0, 0, 0, 1);
+   border-radius: 8px;
+   }
+    .contacts_container:has(input:focus) h4{
+   text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+   color: black;
+   transition: 300ms;
+  }
+  .contacts_input:focus{
+   background: none;
+  }
+  .contacts_input{
+   background: url("../images/contacts.svg")  no-repeat;
+   background-position: 17px 20px;
+   display: flex;
+   vertical-align: middle;
+   border: #fff;
+   width: 582px;
+   height: 60px;
+   padding: 0
+  }
+   /*---------------------------------------КНОПКА РЕЄСТРАЦІЇ---------------------------------------*/
+   .registration_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 39px;
+    width: 582px;
+    height: 85px;
+    background-color: rgba(1, 173, 185, 1);
+    border-radius: 16px;
+    font-family: inter;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+       a{
+         text-decoration: none;
+         color: #fff;
+       }
+   }   
+   .registration_button:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    background-color: #01666b;
+    transition: 300ms;
+   }
+   .account_text{
+    margin-top: 30px;
+    margin-left: 39px;
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+   }
+   .login_link{
+    margin-left: 5px;
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(145, 144, 176, 1);
+    text-decoration: none;
+   }
+   /*---------------------------------------РЕЄСТРАЦІЯ ЧЕРЕЗ СОЦ.МЕРЕЖІ---------------------------------------*/
+   .registration_with_social{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 39px;
+    gap: 72px;
+   }
+   .social_button{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 16px;
+    background-color: #fff;
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(117, 115, 156, 1);
+   
+   }
+   .social_button:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    background-color: #f7f2f2;
+    border: none;
+    transition: 300ms;
+   }
+   .social_button a{
+    text-decoration: none;
+    color: rgba(117, 115, 156, 1);
+   }
+   .fb_icon{
+      padding: 22px 33px;
+      background-color: rgba(51, 127, 255, 1);
+      border-radius: 50%;
+      height: 45px;
+      width: 24px;
+      margin-right: 15px;
+   }
+   .gmail_icon{      
+      width: 54px;
+      height: 40px;
+      padding: 25px 18px;
+      border:1px solid rgba(196, 207, 227, 1);
+      border-radius: 50%;
+           
+   }
+   .gmail_btn{
+      align-items: center;
+      a{
+         display: block;
+        width: 140px;   
+        height: 37px; 
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+   }
